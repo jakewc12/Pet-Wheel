@@ -1,0 +1,33 @@
+BoxLayoutExample:
+    canvas.before:
+        Color:
+            rgba:(75/255,0,130/255,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<BoxLayoutExample>:
+    Label:
+        text:"Pet Age: 69696"
+        # x, center_x right
+        # y, center_y top
+        size: self.texture_size
+        pos_hint: {"center_x":0.2,"top":1.4}
+        
+    Label:
+        text:"Name: UR MOM"
+        size: self.texture_size
+        pos_hint: {"center_x":0.2,"top":1.2}
+    Label:
+        text:"Health: Dead"
+        size: self.texture_size
+        pos_hint: {"center_x":0.2,"top":1.}    
+    Label:
+        text:"Happiness: What is that?"
+        size: self.texture_size
+        pos_hint: {"center_x":0.2,"top":1.4}
+    Label:
+        text:"Hunger: For dans soul"
+        size: self.texture_size
+        font_size: "50dp"
+        pos_hint: {"center_x":0.5,"top":0.8}

@@ -8,7 +8,7 @@ BoxLayoutExample:
 
 <BoxLayoutExample>:
     Label:
-        text:"Pet Age: 69696"
+        text:"Pet Age: 1"
         # x, center_x right
         # y, center_y top
         size: self.texture_size
@@ -17,11 +17,11 @@ BoxLayoutExample:
     Label:
         text:"Name: Daddy Raggy"
         size: self.texture_size
-        pos_hint: {"center_x":0.325,"top":.85}
+        pos_hint: {"center_x":0.325,"top":.95}
     Label:
-        text:"Health: Dead"
+        text: root.status
         size: self.texture_size
-        pos_hint: {"center_x":0.325,"top":.95}    
+        pos_hint: {"center_x":0.325,"top":.85}    
     Label:
         text:"Happiness: What is that?"
         size: self.texture_size
@@ -31,3 +31,25 @@ BoxLayoutExample:
         size: self.texture_size
         #font_size: "20dp"
         pos_hint: {"center_x":0.325,"top":0.75}
+    ProgressBar:
+        id: my_progress_bar
+        text: "health"
+        max:100
+        #root.change_health(self)
+        #value: root.change_health(self)
+        value: root.changedFinal
+        pos_hint: {'x':.5 , 'y':-.15}
+        
+        size_hint_x: .2
+    TextInput:
+        size_hint: None,1
+        width: "100dp"
+        #oh shit what if we allowed the user to talk to the pet.
+        #give the pet certain resposes based on text
+
+    #Image:
+       # source: "charmander.png"
+        #allow_stretch: True
+       #keep_ratio: True
+        #width: self.parent.width
+        #height: self.parent.width/self.image_ratio

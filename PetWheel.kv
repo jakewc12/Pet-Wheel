@@ -47,9 +47,13 @@ BoxLayoutExample:
         #oh shit what if we allowed the user to talk to the pet.
         #give the pet certain resposes based on text
 
-    #Image:
-       # source: "charmander.png"
-        #allow_stretch: True
-       #keep_ratio: True
-        #width: self.parent.width
-        #height: self.parent.width/self.image_ratio
+    Image:
+        source: "raghav.png"
+        allow_stretch: False
+        keep_ratio: True
+        size_hint_y: None
+        size_hint_x: None
+        width: 270
+        height: 270
+        allow_stretch: True
+        pos_hint: {"center_x":0.5,"center_y":0.70 }

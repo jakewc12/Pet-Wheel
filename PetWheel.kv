@@ -14,24 +14,29 @@ BoxLayoutExample:
         # y, center_y top
         size: self.texture_size
         pos_hint: {"center_x":0.2,"top":1.4}
+        font_name: "Oswald-Regular"
         
     Label:
         text:"Name: Daddy Raggy"
         size: self.texture_size
         pos_hint: {"center_x":0.325,"top":.95}
+        font_name: "Oswald-Regular"
     Label:
         text: root.status
         size: self.texture_size
-        pos_hint: {"center_x":0.325,"top":.85}    
+        pos_hint: {"center_x":0.325,"top":.85}
+        font_name: "Oswald-Regular"    
     Label:
         text:"Happiness: What is that?"
         size: self.texture_size
         pos_hint: {"center_x":0.325,"top":.65}
+        font_name: "Oswald-Regular"
     Label:
         text:"Hunger: For dans soul"
         size: self.texture_size
         #font_size: "20dp"
         pos_hint: {"center_x":0.325,"top":0.75}
+        font_name: "Oswald-Regular"
     ProgressBar:
         id: my_progress_bar
         text: "health"

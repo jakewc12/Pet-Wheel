@@ -7,14 +7,14 @@ from kivy.uix.progressbar import ProgressBar
 from kivy.uix.textinput import TextInput
 import time
 class BoxLayoutExample(FloatLayout):
-    startHealth = 100
-    startSeconds = 1677041749.9353511
+    cur_file = open('./petStats.txt' , 'r')
+    startHealth = cur_file.readline
+    startSeconds = time.time()
     #instead of using this random number for start seconds
     #we should use the time the game was launched
     changedTime = time.time() - startSeconds
-    changedValue = changedTime/1800
     #decreases 1 every half day
-    changedFinal = 100 -int(changedValue)
+    changedFinal = 100 -int(changedTime/1800)
     status = "Status: "
     if changedFinal >= 75:
         status += " Healthy"
